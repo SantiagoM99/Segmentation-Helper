@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="segmenthelper",
+    version="0.2",
+    packages=find_packages(where="segment-helper"),
+    url="https://github.com/SantiagoM99/Segmentation-Helper.git",
+    install_requires=[
+        "torch==2.3.0",
+        "torchaudio==2.3.0",
+        "torchvision==0.18.0",
+        "albumentations",
+        "numpy",
+        "pandas",
+        "scikit_learn",
+        "kaggle",
+        "resnest",
+        "geffnet",
+        "opencv-python",
+        "pretrainedmodels",
+        "tqdm",
+        "Pillow",
+        "packaging",
+    ],
+    author="Santiago Martínez Novoa",
+    author_email="s.martinezn@uniandes.edu.co",
+    description="Segmentation Helper for Melanoma Classification",
+    license="MIT",
+    keywords="melanoma segmentation classification",
+)
